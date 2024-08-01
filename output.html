@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>table 1</h1>
+    <table border="1" class="styled-table">
+        <tr>
+            <th>Index</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>63</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td>53</td>
+        </tr>
+        <tr>
+            <td>A7</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>A8</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <td>A9</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>A10</td>
+            <td>93</td>
+        </tr>
+        <tr>
+            <td>A11</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>A12</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>A13</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>A14</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>A15</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>A16</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>A17</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <td>A18</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>A19</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>A20</td>
+            <td>28</td>
+        </tr>
+    </table>
+
+    <h1>table 2</h1>
+    <table border="1" class="styled-table">
+        <tr>
+            <th>Category</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Alpha</td>
+            <td id="alpha"></td>
+        </tr>
+        <tr>
+            <td>Beta</td>
+            <td id="beta"></td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td id="charlie"></td>
+        </tr>
+    </table>
+
+    <script>
+    // Values from Table 1
+    var values = {
+        A5: 2,
+        A20: 28,
+        A15: 80,
+        A7: 5,
+        A13: 90,
+        A12: 3
+    };
+
+    // Calculations for Table 2
+    var alpha = values.A5 + values.A20;
+    var beta = values.A15 / values.A7;
+    var charlie = values.A13 * values.A12;
+
+    // Displaying the results in Table 2
+    document.getElementById('alpha').textContent = alpha;
+    document.getElementById('beta').textContent = beta.toFixed(2); // Rounded to two decimal places
+    document.getElementById('charlie').textContent = charlie;
+    </script>
+    
+
+</body>
+</html>
